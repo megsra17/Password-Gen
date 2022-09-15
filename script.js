@@ -1,6 +1,9 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-
+var lowerCase= "abcdefghijklmnopqrstuvwxyz";
+var upperCase= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var numeric = '0123456789';
+var specialChar = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
@@ -21,9 +24,9 @@ function generatePassword(){
     password = parseInt(password)
     console.log(typeof password)
   }
-  var characters = prompt('Include lowercase, uppercase, numeric, and/or special characters');
-  if (characters){
-    
+  var characters = confirm('Should it include lowercase');
+  if (true){
+
   }
   
 }
