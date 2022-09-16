@@ -17,17 +17,20 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 function generatePassword(){
   var password = prompt('Password length is atleast 8 characters and no more than 128 characters');
-  if (password.length < 8){
-    alert("please enter new password");
-     password = prompt('Password length is atleast 8 characters and no more than 128 characters');
+  password = parseInt(password)
+  console.log( password)
+  
+  if (password < 8 || password > 128){
+    alert("please enter a number between 8 and 128");
+     
+    
   }else{
-    password = parseInt(password)
-    console.log(typeof password)
-  }
-  var characters = confirm('Should it include lowercase');
-  if (true){
+    var characters = confirm('Should it include lowercase');
+    if (true){
 
+    }
   }
+  
   
 }
 
