@@ -25,14 +25,15 @@ function generatePassword(){
      generatePassword()  
   }else{ 
     
-    /* password.length =  */
   }
+
   var lowerCharacters = confirm('Should it include lowercase');
     if (true){
       lowerCharacters = lowerCase.split("")
     } else{
       
     }
+    console.log(lowerCharacters)
 
   var upperCharacters = confirm('Should it include uppercase');
     if (true){
@@ -40,6 +41,7 @@ function generatePassword(){
     } else{
       
     }
+    console.log(upperCharacters)
 
   var numbers = confirm('Should it include numbers');
     if (true){
@@ -47,6 +49,7 @@ function generatePassword(){
     } else{
       
     }
+    console.log(numbers)
 
   var special = confirm('Should it include special characters');
     if (true){
@@ -54,7 +57,17 @@ function generatePassword(){
     } else{
       
     }
+    console.log(special)
 
-    var passwordArray = [special, numbers, upperCharacters, lowerCharacters]
+    var passwordArray = [special, numbers, upperCharacters, lowerCharacters];
+    console.log(passwordArray);
+    var newpassword = "";
+
+    for (var i = 0; i < password; i++)
+      newpassword = passwordArray.charAt(Math.floor(Math.random() * i));
+      console.log(newpassword);
+      
 }
+
+generatePassword();
 
