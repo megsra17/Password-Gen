@@ -26,8 +26,7 @@ HTML and CSS and JavaScript
 
 ## Screenshot
 
-![This is an image of my project] (https://github.com/megsra17/challenge3/screenshot.png)
-
+![screenshot](https://user-images.githubusercontent.com/108164966/190917997-e579e338-3a6b-4c5f-9fb7-75a96d39e264.png)
 ## Url Link
 
 [Challange 3](https://megsra17.github.io/challenge3/)
