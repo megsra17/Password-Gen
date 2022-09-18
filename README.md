@@ -1,6 +1,6 @@
-# Challenge 2 Homework
+# Challenge 3 Homework
 
-This is the second Homework assignment in which we have to create a portfolio from scratch.
+This is the third Homework assignment in which we create an application that an employee can use to generate a random password based on criteria they've selected.
 
 ## Accepted Criteria For Challenge
 
@@ -26,7 +26,7 @@ HTML and CSS and JavaScript
 
 ## Screenshot
 
-![This is an image of my project]
+![This is an image of my project] (https://github.com/megsra17/challenge3/screenshot.png)
 
 ## Url Link
 
