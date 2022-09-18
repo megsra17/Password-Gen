@@ -10,7 +10,6 @@ var specialChar = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
 function generatePassword(){
   var password = prompt('Please Enter # thats password length is atleast 8 characters and no more than 128 characters');
   password = parseInt(password)
-  console.log( password)
   
   if (password < 8 || password > 128 || isNaN(password)){
     alert("please enter a number between 8 and 128");
@@ -26,7 +25,6 @@ function generatePassword(){
       lowerCharacters = ""
       
     }
-    console.log(lowerCharacters)
 
   var upperCharacters = confirm('Should it include uppercase');
     if (upperCharacters == true){
@@ -34,16 +32,13 @@ function generatePassword(){
     } else{
       upperCharacters = ""
     }
-    console.log(upperCharacters)
 
   var numbers = confirm('Should it include numbers');
     if (numbers == true){
       numbers = numeric.split("");
     } else{
-      numbers = ""
-      
+      numbers = ""    
     }
-    console.log(numbers)
 
   var special = confirm('Should it include special characters');
     if (special == true){
@@ -51,19 +46,15 @@ function generatePassword(){
     } else{
       special = ""
     }
-    console.log(special)
 
-    var passwordArray = [special, numbers, upperCharacters, lowerCharacters];
+    var passwordArray = [...special, ...numbers, ...upperCharacters, ...lowerCharacters];
     
-    console.log(passwordArray);
     var newPassword = "";
 
-    for (var i = 0; i <= password; i++)
-      console.log(passwordArray[Math.floor(Math.random() * i)]);
-      newPassword += passwordArray[Math.floor(Math.random() * i)];
-      console.log(newPassword);
-      return newPassword;
-      
+    for (var i = 1; i <= password; i++){
+      newPassword += passwordArray[Math.floor(Math.random() * passwordArray.length)];
+    }
+    return newPassword;      
 }
 
       // Write password to the #password input
@@ -72,7 +63,6 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
 
 // Add event listener to generate button
