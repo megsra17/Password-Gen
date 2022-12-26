@@ -29,4 +29,4 @@ HTML and CSS and JavaScript
 ![screenshot](https://user-images.githubusercontent.com/108164966/190917997-e579e338-3a6b-4c5f-9fb7-75a96d39e264.png)
 ## Url Link
 
-[Challange 3](https://megsra17.github.io/challenge3/)
+[Password Gen](https://megsra17.github.io/Password-Gen/)
