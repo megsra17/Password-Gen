@@ -116,7 +116,7 @@ function generatePassword() {
 
   var newPassword = "";
 
-  var chooses = [].concat(lowerCase);
+  var chooses = [].concat();
   if (lowerCharacters) chooses = chooses.concat(lowerCase);
   if (upperCharacters) chooses = chooses.concat(upperCase);
   if (numbers) chooses = chooses.concat(numeric);
